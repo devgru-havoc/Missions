@@ -1,0 +1,35 @@
+// Description.ext for Olympus 3
+
+#include "script_component.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgFunctions.hpp"
+
+// Mission settings - title, description, author etc.
+OnLoadName = "Training Grounds";
+OnLoadMission = "ArmaForces Training Facilities";
+author = "ArmaForces";
+loadScreen = QPATHTOTACRF(images,olympus\OlympusLoading.paa);
+overviewPicture = QPATHTOTACRF(images,olympus\OlympusLoading.paa);
+onLoadIntroTime = 1;
+onLoadMissionTime = 1;
+
+// Gametype and playercount
+class Header {
+    gameType = "COOP";
+    minPlayers = 1;
+    maxPlayers = 27;
+};
+
+// Respawn settings
+respawn = "BASE";
+respawnButton = 1;
+respawnDelay = 4;
+respawnDialog = 0;
+
+// AI & debug
+disabledAI = 1;  // Disables AI for Playable Units
+enableDebugConsole[] = {"76561198048995566", "76561198085500182"};  // Enables Debug Console for players with specified UIDs (Jonpas and Tyrone) and Host/Admin
+enableTargetDebug = 1;
+
+// Other settings
+cba_settings_hasSettingsFile = 1;  // Enables use of "cba_settings.sqf", remove if file is not present (will crash)
