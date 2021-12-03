@@ -1,0 +1,30 @@
+mods\450814997;mods\@DPSO_ACE3;mods\@DPSO_alive;mods\@DPSO_ALIVE_adds;mods\@DPSO_Core;mods\@DPSO_ShackTAC;mods\@DPSO_TFAR;mods\@DPSO_Maps;mods\@DPSO_Land;mods\@DPSO_Helicopters
+
+
+
+mods\@DPSO_ace3_server;mods\@JSRS4Server
+
+
+mklink /J "C:\TCAFiles\Users\dpso\2\mods" "C:\TCAFiles\Users\SteamCmd\steamapps\workshop\content\107410"
+
+mklink /J "C:\TCAFiles\Users\dpso\2\keys" "C:\TCAFiles\Users\SteamCmd\keys"
+
+@CBA_A3;@DPSO_ACE3;@DPSO_alive;@DPSO_ALIVE_adds;@DPSO_Core;@DPSO_ShackTAC;@DPSO_TFAR;@DPSO_Gear;@DPSO_Air;@DPSO_Maps;@DPSO_Land;@DPSO_Navy
+
+
+runas /user:TCAGame cmd.exe
+Password: 6GACIiFed752DtCV6a7P
+steamcmd.exe +login anonymous +workshop_download_item 107410 789444133 +quit
+
+runas /user:TCAGame steamcmd.exe +login anonymous +workshop_download_item 107410 789444133 +quit
+
+
+class gk0
+{
+  name = "fire1"; // Display Name for editor
+  sound[] = {"\scripts\sound\gk0.ogg", 2, 1.0};
+  titles[]={}; //Do not use unless you know what you are doing!
+};
+
+
+gk0,gk1,gk2,gk3,gk4,gk5,gk6,gk7,gk8,gk9,gk10,gk11

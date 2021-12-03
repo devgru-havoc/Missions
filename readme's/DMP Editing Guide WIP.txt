@@ -1,0 +1,33 @@
+Drongo's Map Population Editing Guide
+by Drongo
+21 Feb 2020
+
+WORK IN PROGRESS
+
+Support me on Patreon: https://www.patreon.com/DrongoMods
+
+Checking units:
+Each unit will has text variables called dmpFaction and dmpAItype which can be checked by getVariable. For example
+
+systemChat format["%1",(_unit getVariable"dmpAItype")];
+
+or more robustly:
+
+if!(isNil{_unit getVariable"dmpAItype"})then{systemChat format["%1",(_unit getVariable"dmpAItype")]};
+
+HVTs have a variable called dmpIsHVT.
+
+Traders have an array called dmpTraderInfo that holds all of their stock.
+
+
+Useful variables:
+dmpLocations:		array of positions of engine locations found with the nearestLocations command
+dmpRemoteAreas:		array of generated markers of areas that are dmpRemoteDistance away from the above locations
+dmpCompounds:		array of positions of compounds (compounds are 3 or more enterable buildings that are away from towns)
+dmpBlacklist:		array of blacklisted positions
+dmpOccupiedTowns:	array of positions that have an occupation force spawned on them
+dmpPlayerCash:		number used for buying from traders
+
+Useful functions:
+dmp_fnc_GetHVTs:	[_position,_side] get an array of all HVT units on given side, ordered from closest to _position
+dmp_fnc_GetCivilianLeaders:	[_position,_side] get an array of all civilian leader units, ordered from closest to _position

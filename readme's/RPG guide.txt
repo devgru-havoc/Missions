@@ -1,0 +1,64 @@
+DMP RPG Overview
+================
+
+Basic use
+=========
+When the player opens their inventory, a hint describing their condition will be shown. To access menus for actions and skills, double click on the uniform inventory slot.
+
+Hunger, thirst, fatigue and exposure are best kept close to between 0 and 10. At values over 10, the player will start to suffer negative effects. At values over 15, these effects will become more serious. At values over 20, death may occur.
+
+Hunger can be reduced by any food item.
+Thirst can be reduced by any drink item. If near a water source, the action menu will also have an option to drink and fill any empty bottles/canteens.
+Fatigue can be reduced by sleeping and energy drinks. At values over 10, the player may collapse. Sleeping in (near) tents or inside near a bed or sleeping bag will improve sleep quality. Sleeping can also reduce damage and may remove debuffs.
+Exposure will increment when the player is too cold. Warm clothing, being inside, being near a campfire, eating hot food and heatpacks can reduce exposure.
+
+Debuffs
+=======
+Infection:	Comes from drinking dirty water. Increases hunger and fatigue. Cure with antibiotics.
+Weak:		Comes from high hunger. Increases the chance of getting sick from dirty water. Increases fatigue. Cure with sleep.
+Exhausted:	Comes from high fatigue. Increases fatigue. Decreases player stamina (engine value). Cure with sleep.
+Bleeding:	Comes from taking a lot of damage in a short period. Gradually damages player. Cure with a bandage.
+Poison:		Comes from scripted attacks. Gradually damages player. Cure with antidote.
+Fever:		Comes from high exposure. Increases fatigue and thirst. Can be cured with painkillers and sleep.
+
+Level and experience
+====================
+Players get experience by killing enemies or through scripted events. With enough XP, players can level up and gain one skill point every new level. Skill points can be used to gain new skills.
+
+Items, cash, loot and trading
+=============================
+Most inventory items can be used by double-clicking on them. Double clicking on wallets adds money that can be used at traders spawned with the DMP Traders module. Loot can be added to a map by using the DMP Loot module.
+
+Saving and loading
+==================
+The "Character" saving option saves the player, not objects, groups, missions etc. Any items not on the player when saving will not be saved. When a player is killed, their save is deleted.
+
+Instanced Campaign (WIP)
+========================
+This is a semi-persistent saving system. If this module is placed, it will overwrite the above saving system. It will save the character as well as any objects near the player within the save radius specified within the module. In addition, any objects within radius of DMP tents placed by the player will be saved
+
+Useful GVARs
+============
+dmpHunger=0;
+dmpThirst=0;
+dmpFatigue=0;
+dmpExposure=0;
+dmpPlayerCash=0;
+dmpPlayerLevel=1;
+dmpPlayerXP=0;
+dmpPlayerXPnextLevel=0;
+dmpPlayerSkillPoints=0;
+dmpPlayerSkills=[];
+
+Instanced Campaign Mode
+=======================
+The RPG Campaign uses "instances". This means that characters are saved between each Arma mission. The RPGIC module allows setting whether each player's position and health are saved when the mission instance ends (or if they instead start at the same position with the same health each time). In addition, objects near players or DMP tents will be saved (the radius can be set in the RPGIC module). Blacklist modules will prevent this saving.
+
+Future plans
+============
+Meta-quest generation
+NPC interaction
+Bionics system
+Magic system
+Anomalies
+Creatures

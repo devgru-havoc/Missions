@@ -1,0 +1,90 @@
+nato, con-1, b4-1
+
+BLU_F
+BLU_G_F
+
+
+OPF_F
+
+
+IND_F
+
+op4-1, op4-2, con-1
+
+
+
+
+//addaction on flag pole
+
+this addAction 
+[
+   "Go to C130",
+   {
+      (_this select 1) moveInCargo C130Name;
+   }
+];
+
+
+
+Your 1st option would work well, but whenever you're referencing markers you have to use quotes. Also, when using a marker as a positional point, you need to use getMarkerPos.
+
+So, your trigger's onAct would be:
+
+"respawn_west" setMarkerPos (getMarkerPos "spawn_2");
+
+Stricly speaking you don't need the brackets, but it's good habit and it makes it easier to read and understand.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+//this addAction ["Teleport -destinationName","teleport.sqf",[objectName]];
+
+// Get the destination.
+_dest = (_this select 3) select 0;
+
+// Get a random direction
+_dir = random 359;
+
+// Move the person a few meters away from the destination (in the direction of _dir)
+player SetPos [(getPos _dest select 0)-10*sin(_dir),(getPos _dest select 1)-10*cos(_dir)];
+
+
+
+this addAction ["Teleport - MHQ","teleport.sqf",[MHQ1]];
+
+
+
+ALiVE_SUP_MULTISPAWN_RESPAWN_BLU_G_F
+
+this setFlagTexture 'armamission.paa'; _halo_jump =[2000,100,this] execVM "halo.sqf"; 
+this addAction["<t color='#551A8B'>Sanctuary</t>", {player setPos getMarkerPos("ALiVE_SUP_MULTISPAWN_RESPAWN_BLU_G_F")}]; 
+
+
+
+this addAction["<t color='#551A8B'>vendetta</t>", {player setPos getMarkerPos("vendetta")}]; 
+
+this addAction["<t color='#551A8B'>swampshire</t>", {player setPos getMarkerPos("swampshire")}];
+this addAction["<t color='#551A8B'>savu</t>", {player setPos getMarkerPos("savu")}];
+this addAction["<t color='#551A8B'>katkoula</t>", {player setPos getMarkerPos("katkoula")}];
+this addAction["<t color='#551A8B'>georgetown</t>", {player setPos getMarkerPos("georgetown")}];
+this addAction["<t color='#551A8B'>belfort</t>", {player setPos getMarkerPos("belfort")}];
+this addAction["<t color='#551A8B'>autumnrunner</t>", {player setPos getMarkerPos("autumnrunner")}];
+
+
+
+this setFlagTexture 'armamission.paa'; _halo_jump =[2000,100,this] execVM "halo.sqf"; 
+this addAction["<t color='#551A8B'>LHD</t>", {player setPos getMarkerPos("lhd_tp")}]; 
+this addAction["<t color='#551A8B'>LHD SUB Bay</t>", {player setPos getMarkerPos("lhd_sub_spawn")}];
+this addAction["<t color='#551A8B'>LHD LCAC</t>", {player setPos getMarkerPos("lcac")}];
+this addAction["<t color='#551A8B'>Nimitz</t>", {player setPos getMarkerPos("nimitz_tp")}]; 
+this addAction["<t color='#551A8B'>SUB</t>", {player setPos getMarkerPos("sub_tp")}]; 
+this addAction["<t color='#551A8B'>Sea Fighter</t>", {player setPos getMarkerPos("sea_fighter")}]; 
+
+
+
+
+moveInCargo _jeepOne;
+
+
+null = [this, 25, 3000, 1.1, 0.15, 0.30, 0.55, 24] execVM "scripts\trindisplay\diverstats.sqf";this addItem "optic_NVS";this moveInCargo c130;

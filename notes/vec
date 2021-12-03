@@ -1,0 +1,103 @@
+vec
+
+-ip=64.150.180.224 -port=2302 -config=dpso\config.cfg -cfg=dpso\basic.cfg -profiles=dpso -name=dpso -mod=mods\@CBA_A3;mods\@ALiVE;mods\@Stamina;mods\@ace;mods\@ACEX;mods\@task_force_radio;mods\@ShackTac;mods\@AdvancedRappelling;mods\@UH-80R;mods\@Spyder;mods\@ASR_AI3;mods\@DPSO_Gear; -noSplash -bepath=dpso\BattlEye -autoInit -enableHT
+
+
+	-ip=64.150.180.224 -port=2302 -noPause -noSound -enableHT "-cfg=A3DS\basic.cfg" "-config=A3DS\server.cfg" "-profiles=A3DS" -name=dpso -mod=mods\@CBA_A3;mods\@ALiVE;mods\@Stamina;mods\@ace;mods\@ACEX;mods\@task_force_radio;mods\@ShackTac;mods\@AdvancedRappelling;mods\@UH-80R;mods\@Spyder;mods\@ASR_AI3;mods\@DPSO_Gear; -noSplash -bepath=A3DS\BattlEye
+
+
+	-noLogs
+	-autoInit
+
+
+
+
+
+B_APC_Wheeled_01_cannon_F
+
+B_MRAP_01_F
+B_MRAP_01_gmg_F
+B_MRAP_01_hmg_F
+B_G_Offroad_01_repair_F
+B_G_Offroad_01_F
+B_G_Offroad_01_armed_F
+B_Truck_01_transport_F
+B_Truck_01_covered_F
+B_Truck_01_mover_F
+B_Truck_01_box_F
+B_Truck_01_Repair_F
+B_Truck_01_ammo_F
+B_Truck_01_fuel_F
+B_Truck_01_medical_F
+B_G_Van_01_transport_F
+B_G_Van_01_fuel_F
+B_APC_Wheeled_01_cannon_F
+B_UGV_01_F
+B_UGV_01_rcws_F
+
+
+B_T_MRAP_01_F
+B_T_MRAP_01_gmg_F
+B_T_MRAP_01_hmg_F
+B_T_G_Offroad_01_repair_F
+B_T_G_Offroad_01_F
+B_T_G_Offroad_01_armed_F
+B_T_Truck_01_transport_F
+B_T_Truck_01_covered_F
+B_T_Truck_01_mover_F
+B_T_Truck_01_box_F
+B_T_Truck_01_Repair_F
+B_T_Truck_01_ammo_F
+B_T_Truck_01_fuel_F
+B_T_Truck_01_medical_F
+B_T_APC_Wheeled_01_cannon_F
+
+
+O_MRAP_02_F
+O_MRAP_02_hmg_F
+O_MRAP_02_gmg_F
+O_G_Offroad_01_repair_F
+O_G_Offroad_01_F
+O_G_Offroad_01_armed_F
+O_Truck_02_covered_F
+O_Truck_02_transport_F
+O_Truck_02_box_F
+O_Truck_02_medical_F
+O_Truck_02_Ammo_F
+O_Truck_02_fuel_F
+O_UGV_01_F
+O_UGV_01_rcws_F
+O_Truck_03_transport_F
+O_Truck_03_covered_F
+O_Truck_03_repair_F
+O_Truck_03_ammo_F
+O_Truck_03_fuel_F
+O_Truck_03_medical_F
+O_Truck_03_device_F
+
+
+
+B_Truck_01_mover_F, B_Truck_01_box_F, B_Truck_01_ammo_F, B_Truck_01_fuel_F, B_Truck_01_repair_F
+O_Truck_03_ammo_F, O_Truck_03_fuel_F, O_Truck_03_repair_F, O_Truck_03_device_F
+I_Truck_02_ammo_F, I_Truck_02_fuel_F, I_Truck_02_repair_F, O_Truck_02_ammo_F, O_Truck_02_fuel_F, O_Truck_02_box_F
+C_Van_01_box_F, C_Van_01_fuel_F, B_G_Van_01_fuel_F
+C_SUV_01_F
+C_Hatchback_01_F, C_Hatchback_01_sport_F
+C_Offroad_01_F, B_G_Offroad_01_F
+B_MRAP_01_F
+O_MRAP_02_F
+C_Van_01_transport_F, B_G_Van_01_transport_F
+O_Truck_03_medical_F
+O_Truck_03_transport_F, O_Truck_03_covered_F
+I_Truck_02_covered_F, I_Truck_02_transport_F, O_Truck_02_covered_F, O_Truck_02_transport_F
+O_Truck_02_medical_F
+B_Truck_01_medical_F
+B_Truck_01_covered_F, B_Truck_01_transport_F
+I_MRAP_03_F
+B_G_Offroad_01_armed_F
+B_MRAP_01_hmg_F
+O_MRAP_02_hmg_F
+I_MRAP_03_hmg_F
+B_MRAP_01_gmg_F
+O_MRAP_02_gmg_F
+I_MRAP_03_gmg_F

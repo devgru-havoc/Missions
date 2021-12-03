@@ -1,0 +1,25 @@
+// Description.ext for Olympus 3
+
+#include "script_component.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgFunctions.hpp"
+#include "configs\CfgSimulator.hpp"
+#include "dialogs\defines.hpp"
+#include "dialogs\patientSpawnMenu.hpp"
+
+class Extended_InitPost_EventHandlers {
+     class CAManBase {
+		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	};
+};
+
+
+class CfgRemoteExec
+{
+   class Functions
+   {
+       mode = 2;
+       jip = 1;
+       #include "functions\INC_undercover\functionsWhitelist.hpp"
+   };
+};

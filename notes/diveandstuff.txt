@@ -1,0 +1,57 @@
+this setVariable ["GLX_Disable", "GLX_Init"];
+
+
+this setVariable ["TCL_Disabled", True];​
+
+
+
+null = [this, 25, 3000, 1.1, 0.32, 0.68, 0.00] execVM “trindisplay\diverstats.sqf"
+null = [this, 25, 3000, 1.1, 0.32, 0.68, 0.00, 25] execVM "trindisplay\diverstats.sqf";
+
+trindisplay\diverstats.sqf
+
+object addAction [title, script, arguments, priority, showWindow, hideOnUse, shortcut, condition, radius, unconscious, selection, memoryPoint]
+this addAction ["<t color='#2bf000'>Air 0 -40 </t><br/>", "{null = [this, 25, 3000, 1.1, 0.21, 0.79, 0.00] execVM “trindisplay\diverstats.sqf"}"];";
+this addAction ["<t color='#2bf000'>EAN32 0 - 40</t><br/>", "{null = [this, 25, 3000, 1.1, 0.32, 0.68, 0.00] execVM “trindisplay\diverstats.sqf"}"];";
+this addAction ["<t color='#2bf000'>Trimax 20 - 60</t><br/>", "{null = [this, 25, 3000, 1.1, 0.20, 0.40, 0.40] execVM “trindisplay\diverstats.sqf"}"];";
+this addAction ["<t color='#2bf000'>Heliox/O2 12/88 100 - 300</t><br/>", "{null = [this, 25, 3000, 1.1, 0.12, 0.0, 0.88] execVM “trindisplay\diverstats.sqf"}"];";
+this addAction ["<t color='#2bf000'>Heliox/O2 28/72 100 - 500</t><br/>", "{null = [this, 25, 3000, 1.1, 0.28, 0.0, 0.72] execVM “trindisplay\diverstats.sqf"}"];";
+
+Gas	O2	N2	HE	Depth (m)
+Air	21%	79%	0%	0 - 40
+EAN32	32%	68%	0%	0 - 40
+Trimax	20%	40%	40%	30 - 60
+Heliox 12	12%	0%	88%	100 - 500
+Heliox 28	28%	0%	72%	100 - 500
+
+
+_daction = ["VulcanPinch","Vulcan Pinch","",{_target setDamage 1;},{true},{},[parameters], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
+[cursorTarget, 0, ["ACE_TapShoulderRight"], _adction] call ace_interact_menu_fnc_addActionToObject;
+
+
+
+["_target", "_caller", "_actionId", "_arguments"];
+
+ this addAction ["<t color='#2bf000'>HALO JUMP</t><br/><img size='1' image='\a3\ui_f\data\gui\cfg\CommunicationMenu\supplydrop_ca.paa'/>", "scripts\flagHALO.sqf"];";
+
+
+
+
+Gas	O2	N2	HE	Depth (m)
+Air	21%	79%	0%	0 - 40
+EAN32	32%	68%	0%	0 - 40
+Heliox 21	21%	0%	79%	100 - 500
+Heliox 28	28%	0%	72%	100 - 500
+Helitrox	26%	57%	17%	10 - 100
+Hypoxic	10%	50%	44%	10 - 100
+Nitrox I	32%	68%	0%	0 - 40
+Nitrox II	36%	64%	0%	0 - 40
+Normoxic	19%	30%	51%	30 - 60
+Oxygen	100%	0%	0%	0 - 4
+Trimax	10%	40%	50%	30 - 60
+Trimax 15/55	15%	30%	55%	30 - 60
+
+
+
+
+this setVariable ["GLX_Disable", "GLX_Init"];

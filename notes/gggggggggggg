@@ -1,0 +1,8 @@
+-ip=$[Service.IpAddress] -port=$[Service.GamePort] -profiles=$[Service.RootDirectory]A3Master -name=A3Master -cfg=$[Service.RootDirectory]A3Master\basic.cfg -config=$[Service.RootDirectory]A3Master\server.cfg "-bepath=$[Service.RootDirectory]Battleye" -enableHT ![addition] "-mod=![Mods]" "-servermod=![ServerMods]"
+
+
+
+ii2zzsPOqg
+
+
+docker create --name=wiki -e LETSENCRYPT_DOMAIN=arma.wiki -e LETSENCRYPT_EMAIL=yonvclaw@gmail.com -e SSL_ACTIVE=1 -e DB_TYPE=postgres -e DB_HOST=db -e DB_PORT=5432 -e DB_PASS_FILE=/etc/wiki/.db-secret -v /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro -e DB_USER=wiki -e DB_NAME=wiki -e UPGRADE_COMPANION=1 --restart=unless-stopped -h wiki --network=wikinet -p 80:3000 -p 443:3443 requarks/wiki:2

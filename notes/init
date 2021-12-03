@@ -1,0 +1,164 @@
+Init/Trigger/Activation
+
+To have the leader of a group to issue the disembark command:
+Groupname leavevehicle vehiclename
+Example: Enemy leavevehicle UH1
+----------------------------------------------------------
+
+To set a Group identifier. (Must be typed in the lead units Initialization field):
+Groupname = group this
+Example: Enemy=group this
+----------------------------------------------------------
+
+Add weapon/magazine to a unit:
+this addweapon "m16"
+this addweapon "binocular"
+this addmagazine "m16mag"
+etc.
+
+----------------------------------------------------------
+
+Make a unit move after trigger is activated:
+
+Unit will move to first waypoint always
+Put a waypoint close to the unit and type in condition ex. blueinarea
+Put next waypoint where you want it/them to go
+
+Put a trigger and type in On Activation: blueinarea=true
+Set up the trigger as you want ex. when blufor is within the trigger
+
+----------------------------------------------------------
+
+Put Units to/into Vehicles (Placed in the units Initialization field):
+To assign a unit as cargo:
+this assignascargo vehiclename
+To assign a unit as driver:
+this assignasdriver vehiclename
+To assign a unit as gunner:
+this assignasgunner vehiclename
+To assign a unit as commander:
+this assignascommander vehiclename
+Or
+To move a unit in as cargo:
+this movencargo vehiclename
+To move a unit in as driver:
+this moveindriver vehiclename
+To move a unit in as gunner:
+this moveingunner vehiclename
+To move a unit in as commander:
+this moveincommander vehiclename
+----------------------------------------------------------
+
+Plane/chopper- jumping out, or Paratooping:
+
+On Activation in waypoint:
+unit action ["actiontype",vehicle name]
+Example: p1 action["Eject",UH1]; unassignvehicle p1 playername=p1 choppername=UH1
+More actions can be found here:
+http://community.bistudio.com/wiki/Armed_Assault:_Actions_List
+
+----------------------------------------------------------
+
+Make the chopper/plane fly in a certain altitude
+
+On Activation in waypoint:
+this flyinheight 100 or UH1 flyinheight 100
+100=meters above ground
+----------------------------------------------------------
+
+Put in leaders init line to move a group in a vehicle:
+"_x moveincargo boat1"
+
+----------------------------------------------------------
+
+Make the unit keep standing:
+this setunitpos "up"
+
+----------------------------------------------------------
+
+Make the unit crouch:
+this setunitpos "middle"
+
+----------------------------------------------------------
+
+Make the unit keep proning:
+this setunitpos "down"
+
+----------------------------------------------------------
+
+Make a unit stand still:
+dostop this
+or
+this disableAI "MOVE"
+
+----------------------------------------------------------
+
+Put in leaders init line to make all units stand still:
+{DoStop _x} forEach units group this
+
+
+----------------------------------------------------------
+
+Make a chopper land:
+choppername land "LAND"
+Example": Black1 land "LAND"
+
+----------------------------------------------------------
+
+Make units disembark when chopper has landed:
+name action ["getout", chopper]
+Example: John action ["getout", LittleBird1]
+
+----------------------------------------------------------
+
+Make a unit leave the group:
+[name] join grpNull
+Example: [John] join grpNull
+
+----------------------------------------------------------
+
+Make a unit join your group:
+[name] join yourgroup
+
+or
+
+[name] joinsilent yourgroup
+Example: [John] join Delta1
+Example: [John] joinsilent Delta1
+
+----------------------------------------------------------
+
+Teleport a unit to a marker:
+unit setPos [(getMarkerPos "markername") select 0, (getMarkerPos "markername") select 1, 0]
+The number 0 at the end can be used to put the unit up in towers etc. just as described further above
+----------------------------------------------------------
+
+Make a unit stand with his hands behind his head (surrender):
+this switchmove "AmovPercMstpSsurWnonDnon"
+
+----------------------------------------------------------
+
+Make a smoke appear:
+Smoke="SmokeShell" createVehicle [(getPos this select 0),(getPos this select 1), 0.5]
+0.5 is meters above ground
+SmokeShell can also be GreenSmokeShell, RedSmokeShell.
+
+----------------------------------------------------------
+
+Papa Bear:
+[west,"base"] sidechat "bla,bla,bla"
+[west,"HQ"] sidechat "bla,bla,bla"
+sidechat can also be globalchat, vehiclechat or groupchat.
+----------------------------------------------------------
+
+To disallow fleeing in a group:
+Groupname allowfleeing 0
+
+
+this setBehaviour "STEALTH"; this setCollisionLight false; this setPilotLight false;
+
+this engineOn true; this setVelocity [20, 0, 0];
+
+
+
+null = [this, 25, 3000, 1.1, 0.15, 0.30, 0.55, 24] execVM "scripts\trindisplay\diverstats.sqf";this addItem "optic_Nightstalker";this moveInCargo ;
