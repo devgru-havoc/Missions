@@ -1715,7 +1715,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tams.paa";
+													value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 												};
 											};
 										};
@@ -1887,7 +1887,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tam.paa";
+													value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 												};
 											};
 										};
@@ -2059,7 +2059,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tams.paa";
+													value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 												};
 											};
 										};
@@ -2458,7 +2458,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tam.paa";
+													value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 												};
 											};
 										};
@@ -12198,7 +12198,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tam.paa";
+													value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 												};
 											};
 										};
@@ -57323,7 +57323,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="tam.paa,tams.paa";
+							value="\z\havoc\addons\media\images\tsigns\MTAM.paa,\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 						};
 					};
 				};
@@ -67079,7 +67079,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -67251,7 +67251,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -67423,7 +67423,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -67595,7 +67595,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -67767,7 +67767,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -67939,7 +67939,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -68111,7 +68111,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -68283,7 +68283,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -68455,7 +68455,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -68627,7 +68627,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -68799,7 +68799,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -68971,7 +68971,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};

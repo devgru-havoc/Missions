@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=6238;
+		nextID=6253;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1018;
+		nextID=1090;
 	};
 	class Camera
 	{
-		pos[]={7650.3691,302.22455,3634.4741};
-		dir[]={0.15820043,-0.6085481,-0.77769381};
-		up[]={0.12130993,0.79349035,-0.59635603};
-		aside[]={-0.98000735,6.3201151e-007,-0.19935796};
+		pos[]={688.55743,37.600559,12114.768};
+		dir[]={0.86681151,-0.38328665,0.31904954};
+		up[]={0.35969558,0.92362028,0.1323936};
+		aside[]={0.3454259,3.1829404e-007,-0.93847597};
 	};
 };
 binarizationWanted=0;
@@ -3522,7 +3522,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tams.paa";
+													value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 												};
 											};
 										};
@@ -3580,7 +3580,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tam.paa";
+													value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 												};
 											};
 										};
@@ -3638,7 +3638,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tams.paa";
+													value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 												};
 											};
 										};
@@ -3923,7 +3923,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tam.paa";
+													value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 												};
 											};
 										};
@@ -12979,7 +12979,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tam.paa";
+													value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 												};
 											};
 										};
@@ -31176,7 +31176,7 @@ class Mission
 			name="HAVOC";
 			class Entities
 			{
-				items=7;
+				items=8;
 				class Item0
 				{
 					dataType="Group";
@@ -32542,7 +32542,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=6;
+						items=8;
 						class Item0
 						{
 							dataType="Object";
@@ -33866,6 +33866,434 @@ class Mission
 								nAttributes=6;
 							};
 						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={669.87177,28.921438,12167.822};
+								angles[]={0,1.6829338,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Recon@Black Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenblk";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6249;
+							type="havoc_units_socom_blk";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=5;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={672.35645,28.921438,12167.542};
+								angles[]={0,1.6829338,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Recon@Black Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenblk";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6248;
+							type="havoc_units_socom_blk";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=5;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
 					};
 					class Attributes
 					{
@@ -33902,7 +34330,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=6;
+						items=8;
 						class Item0
 						{
 							dataType="Object";
@@ -35225,6 +35653,434 @@ class Mission
 								nAttributes=6;
 							};
 						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={671.37933,28.921438,12176.891};
+								angles[]={0,1.7105798,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Silver Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenslv";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6245;
+							type="havoc_units_socom_slv";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=3;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={668.90393,28.921438,12177.239};
+								angles[]={0,1.7105798,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Silver Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenslv";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6246;
+							type="havoc_units_socom_slv";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=3;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
 					};
 					class Attributes
 					{
@@ -35261,7 +36117,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=6;
+						items=8;
 						class Item0
 						{
 							dataType="Object";
@@ -36584,6 +37440,472 @@ class Mission
 								nAttributes=6;
 							};
 						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={672.71582,28.921438,12196.01};
+								angles[]={0,1.6501564,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Blue Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenblu";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6239;
+							type="havoc_units_socom_blu";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={670.224,28.921438,12196.208};
+								angles[]={0,1.6501564,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Blue Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenblu";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6240;
+							type="havoc_units_socom_blu";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male11ENG";
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.04;
+										};
+									};
+								};
+								nAttributes=8;
+							};
+						};
 					};
 					class Attributes
 					{
@@ -36620,7 +37942,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=6;
+						items=8;
 						class Item0
 						{
 							dataType="Object";
@@ -37823,6 +39145,434 @@ class Mission
 								};
 							};
 							id=1192;
+							type="havoc_units_socom_red";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={672.25031,28.921438,12187.09};
+								angles[]={0,1.6501564,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Red Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenred";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6242;
+							type="havoc_units_socom_red";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={669.75806,28.921438,12187.288};
+								angles[]={0,1.6501564,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Red Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greenred";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6243;
 							type="havoc_units_socom_red";
 							class CustomAttributes
 							{
@@ -40456,6 +42206,448 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item7
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={674.01288,28.921438,12157.606};
+								angles[]={0,1.6905085,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Gold Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greengld";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6251;
+							type="havoc_units_socom_gld";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=4;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={671.53101,28.921438,12157.904};
+								angles[]={0,1.6905085,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.40000001;
+								description="Breacher@Gold Squadron";
+								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="havoc_weapons_MX_BlackCamo_ACO";
+										optics="optic_Aco";
+										class primaryMuzzleMag
+										{
+											name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+											ammoLeft=30;
+										};
+									};
+									class handgun
+									{
+										name="havoc_weapons_hgun_P07_blk_F";
+									};
+									class binocular
+									{
+										name="Binocular";
+									};
+									class uniform
+									{
+										typeName="havoc_uniform_U_CombatUniformMC";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=1;
+												ammoLeft=30;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="havoc_medbags_FirstAid";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_MapTools";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="havoc_vests_PlateCarrier2_Greengld";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="havoc_weapons_30Rnd_65x39_caseless_BlackCamo_mag";
+												count=4;
+												ammoLeft=30;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="TFAR_rf7800str";
+									gps="ItemGPS";
+									goggles="G_Shades_Green";
+									headgear="havoc_headgear_Cap_BlackLogo";
+								};
+							};
+							id=6252;
+							type="havoc_units_socom_gld";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="havoc_curator_isZeus";
+									expression="if (_value) then {[{[_this] call havoc_curator_fnc_assignZeus}, _this] call CBA_fnc_execNextFrame}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.70000005;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="HAVOC_Group_Preset";
+									expression="[_this, _value] call HAVOC_fnc_ConfigPlayer;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=4;
+										};
+									};
+								};
+								nAttributes=6;
+							};
+						};
+					};
+					class Attributes
+					{
+						formation="FILE";
+					};
+					id=6250;
+				};
 			};
 			id=1157;
 		};
@@ -42183,7 +44375,7 @@ class Mission
 							};
 							id=5022;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42243,7 +44435,7 @@ class Mission
 							};
 							id=5023;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42303,7 +44495,7 @@ class Mission
 							};
 							id=5024;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42363,7 +44555,7 @@ class Mission
 							};
 							id=5025;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42423,7 +44615,7 @@ class Mission
 							};
 							id=5026;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42483,7 +44675,7 @@ class Mission
 							};
 							id=5027;
 							type="Land_Bandage_F";
-							atlOffset=1.2358761;
+							atlOffset=1.2577801;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44162,7 +46354,7 @@ class Mission
 							};
 							id=5055;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44222,7 +46414,7 @@ class Mission
 							};
 							id=5056;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44282,7 +46474,7 @@ class Mission
 							};
 							id=5057;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44342,7 +46534,7 @@ class Mission
 							};
 							id=5058;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44402,7 +46594,7 @@ class Mission
 							};
 							id=5059;
 							type="Land_Bandage_F";
-							atlOffset=1.2354469;
+							atlOffset=1.2573509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44462,7 +46654,7 @@ class Mission
 							};
 							id=5060;
 							type="Land_Bandage_F";
-							atlOffset=1.2358761;
+							atlOffset=1.2577801;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44643,7 +46835,7 @@ class Mission
 							};
 							id=5063;
 							type="Land_Defibrillator_F";
-							atlOffset=0.85754395;
+							atlOffset=0.93037033;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -45109,11 +47301,11 @@ class Mission
 						};
 					};
 					id=5011;
-					atlOffset=1.0476265;
+					atlOffset=1.0479317;
 				};
 			};
 			id=5071;
-			atlOffset=1.0476265;
+			atlOffset=1.0479317;
 		};
 		class Item13
 		{
@@ -45577,6 +47769,7 @@ class Mission
 					};
 					id=5086;
 					type="Land_Bandage_F";
+					atlOffset=0.021903992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -45618,6 +47811,7 @@ class Mission
 					};
 					id=5087;
 					type="Land_Bandage_F";
+					atlOffset=0.021903992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46191,6 +48385,7 @@ class Mission
 					};
 					id=5101;
 					type="Land_Bandage_F";
+					atlOffset=0.021903992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46232,6 +48427,7 @@ class Mission
 					};
 					id=5102;
 					type="Land_Bandage_F";
+					atlOffset=0.021903992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46299,7 +48495,7 @@ class Mission
 				};
 			};
 			id=5104;
-			atlOffset=0.30758667;
+			atlOffset=0.31579971;
 		};
 		class Item14
 		{
@@ -50050,7 +52246,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="tam.paa,tams.paa";
+							value="\z\havoc\addons\media\images\tsigns\MTAM.paa,\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 						};
 					};
 				};
@@ -53736,7 +55932,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -53794,7 +55990,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -53852,7 +56048,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -53910,7 +56106,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -53968,7 +56164,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -54026,7 +56222,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -54084,7 +56280,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -54142,7 +56338,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -54200,7 +56396,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -54258,7 +56454,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -54316,7 +56512,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tam.paa";
+											value="\z\havoc\addons\media\images\tsigns\MTAM.paa";
 										};
 									};
 								};
@@ -54374,7 +56570,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="tams.paa";
+											value="\z\havoc\addons\media\images\tsigns\HTAM1.paa";
 										};
 									};
 								};
@@ -59280,18 +61476,18 @@ class Mission
 				};
 			};
 			id=6221;
-			atlOffset=90.098473;
+			atlOffset=89.792618;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=40;
+			nextID=41;
 		};
 		class Links
 		{
-			items=40;
+			items=41;
 			class Item0
 			{
 				linkID=0;
@@ -59690,6 +61886,16 @@ class Mission
 				class CustomData
 				{
 					type="Sync";
+				};
+			};
+			class Item40
+			{
+				linkID=40;
+				item0=6251;
+				item1=1160;
+				class CustomData
+				{
+					type="TriggerOwner";
 				};
 			};
 		};
