@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=6487;
+		nextID=6488;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=950;
+		nextID=987;
 	};
 	class Camera
 	{
@@ -3343,7 +3343,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=89;
+		items=90;
 		class Item0
 		{
 			dataType="Layer";
@@ -32642,7 +32642,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={674.33582,28.921438,12159.201};
-								angles[]={-0,1.6905085,0};
+								angles[]={0,1.6905085,0};
 							};
 							side="West";
 							flags=4;
@@ -32856,7 +32856,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.85394,28.921438,12159.499};
-								angles[]={-0,1.6905085,0};
+								angles[]={0,1.6905085,0};
 							};
 							side="West";
 							flags=4;
@@ -34430,7 +34430,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.48364,28.921438,12167.611};
-								angles[]={-0,1.6829338,0};
+								angles[]={0,1.6829338,0};
 							};
 							side="West";
 							flags=4;
@@ -34644,7 +34644,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={673.96832,28.921438,12167.331};
-								angles[]={-0,1.6829338,0};
+								angles[]={0,1.6829338,0};
 							};
 							side="West";
 							flags=4;
@@ -36217,7 +36217,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={673.87909,28.921438,12177.155};
-								angles[]={-0,1.7105798,0};
+								angles[]={0,1.7105798,0};
 							};
 							side="West";
 							flags=4;
@@ -36431,7 +36431,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.40369,28.921438,12177.504};
-								angles[]={-0,1.7105798,0};
+								angles[]={0,1.7105798,0};
 							};
 							side="West";
 							flags=4;
@@ -39363,7 +39363,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={672.54944,28.921438,12187.618};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -39577,7 +39577,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={670.05719,28.921438,12187.816};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -42311,7 +42311,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.97577,28.921438,12197.063};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=6;
@@ -42525,7 +42525,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={669.48352,28.921438,12197.261};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -62854,6 +62854,58 @@ class Mission
 			name="GREN_TECNOLOGY";
 			id=6471;
 			atlOffset=96.5;
+		};
+		class Item89
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={680.75977,28.92,12151.231};
+			};
+			id=6487;
+			type="A3U_ModuleTAW";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TawAllowNoGrass";
+					expression="_this setVariable ['TawAllowNoGrass_C',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TawMaxDistance";
+					expression="_this setVariable ['TawMaxDistance_C',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=30000;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections

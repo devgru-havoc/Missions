@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=6468;
+		nextID=6469;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=911;
+		nextID=947;
 	};
 	class Camera
 	{
-		pos[]={673.3208,37.970337,12137.019};
-		dir[]={-0.031284533,-0.60683227,0.79422498};
-		up[]={-0.023884548,0.79482919,0.60636073};
-		aside[]={0.9992345,2.1571759e-007,0.039358884};
+		pos[]={673.78967,57.347652,12110.109};
+		dir[]={0.59346378,-0.37174594,0.71388096};
+		up[]={0.23764765,0.92833203,0.28586796};
+		aside[]={0.76898992,-1.0873191e-007,-0.63927823};
 	};
 };
 binarizationWanted=0;
@@ -3336,7 +3336,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=87;
+		items=88;
 		class Item0
 		{
 			dataType="Layer";
@@ -32635,7 +32635,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={673.95746,28.921438,12158.813};
-								angles[]={-0,1.6905085,0};
+								angles[]={0,1.6905085,0};
 							};
 							side="West";
 							flags=4;
@@ -32849,7 +32849,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.47559,28.921438,12159.111};
-								angles[]={-0,1.6905085,0};
+								angles[]={0,1.6905085,0};
 							};
 							side="West";
 							flags=4;
@@ -34423,7 +34423,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.63214,28.921438,12167.768};
-								angles[]={-0,1.6829338,0};
+								angles[]={0,1.6829338,0};
 							};
 							side="West";
 							flags=4;
@@ -34637,7 +34637,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={674.11682,28.921438,12167.487};
-								angles[]={-0,1.6829338,0};
+								angles[]={0,1.6829338,0};
 							};
 							side="West";
 							flags=4;
@@ -36210,7 +36210,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={673.4776,28.921438,12178.061};
-								angles[]={-0,1.7105798,0};
+								angles[]={0,1.7105798,0};
 							};
 							side="West";
 							flags=4;
@@ -36424,7 +36424,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.0022,28.921438,12178.409};
-								angles[]={-0,1.7105798,0};
+								angles[]={0,1.7105798,0};
 							};
 							side="West";
 							flags=4;
@@ -37997,7 +37997,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={671.71368,28.921438,12197.039};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -38211,7 +38211,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={669.22144,28.921438,12197.237};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -39784,7 +39784,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={670.89606,28.921438,12187.672};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -39998,7 +39998,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={668.40381,28.921438,12187.87};
-								angles[]={-0,1.6501564,0};
+								angles[]={0,1.6501564,0};
 							};
 							side="West";
 							flags=4;
@@ -62583,6 +62583,58 @@ class Mission
 			};
 			id=6452;
 			atlOffset=98.879517;
+		};
+		class Item87
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={729.63409,28.92,12188.338};
+			};
+			id=6468;
+			type="A3U_ModuleTAW";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TawAllowNoGrass";
+					expression="_this setVariable ['TawAllowNoGrass_C',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TawMaxDistance";
+					expression="_this setVariable ['TawMaxDistance_C',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=30000;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
